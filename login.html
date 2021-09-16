@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS: Login</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="login.js"></script>
+</head>
+<body>
+    <div class="topnav">        
+        <a href="register.html"><i class="fa fa-user-plus"></i> Register</a>
+        <a href="about.html"><i class="fa fa-info-circle"></i> About</a>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <span class="title">User Management System</span>
+    </div>
+
+    <div class="login-container">        
+        <h1><i class="fa fa-user-circle"></i>&nbsp;Login</h1>
+
+        <form action="/login.html" id="loginForm">
+            <ul class="errorMessages"></ul>
+            <div class="input-container">
+                <i class="fa fa-user icon"></i>
+                <input class="input-field" type="email" placeholder="Email" id="emailAddressInput" required>
+                <span id="emailError"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" id="passwordInput" required>
+                <span id="passwordError"></span>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" class="btn" id="submitBtn">Login</button>
+            </div>
+            <div class="span-container">
+                <span>Not a member, please <a href="register.html">register</a></span>
+            </div>
+        </form>
+
+        <span id="successSpan">Login successful, redirecting to Home..</span>
+    </div>
+</body>
+</html>

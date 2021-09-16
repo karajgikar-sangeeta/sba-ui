@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMS: Register</title>
+    <link href="index.css" rel="stylesheet">
+    <link href="register.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="register.js"></script>
+</head>
+<body>
+    <div class="topnav">
+        <a href="login.html"><i class="fa fa-fw fa-user"></i>Login</a>
+        <a href="about.html"><i class="fa fa-info-circle"></i>About</a>
+        <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        <span class="title">User Management System</span>
+    </div>
+
+    <div class="register-container">        
+        <h1><i class="fa fa-user-plus"></i>&nbsp;Register</h1>
+        <form action="/register.html" id="registerForm">
+            <div class="input-container">
+                <i class="fa fa-address-card icon"></i>
+                <input class="input-field" type="text" placeholder="First and Last Name" name="firstlastname" id="fullNameInput" required>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-envelope icon"></i>
+                <input class="input-field" type="email" placeholder="Email" name="email" id="emailAddressInput" required>
+                <span id="error"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-key icon"></i>
+                <input class="input-field" type="password" placeholder="Password" name="password" id="passwordInput" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+                <span id="passwordError"></span>
+            </div>
+
+            <div class="input-container">
+                <i class="fa fa-venus-mars icon"></i>
+                <select name="gender" id="gender" class="input-field">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>                
+                <span id="passwordError"></span>
+            </div>            
+
+            <div class="btn-container">
+                <button type="submit" class="btn" id="submitBtn">Register</button>
+            </div>
+            <div class="span-container">
+                <span>Already a member, please <a href="login.html">login</a></span>
+            </div>
+        </form>
+
+        <span id="successSpan">Registration successful, redirecting to Login..</span>
+    </div>
+</body>
+</html>

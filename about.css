@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-content {
+    padding: 50px;
+}
+
+.header-content h1 {
+    font-size: 50px;
+}
+
+.content {    
+    padding: 50px;
+    padding-top:10px;
+    padding-right: 100px;
+}
+
+.table-container {
+    padding: 50px;
+}
+#container {
+    padding: 20px;
+    margin: 20px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.title {
+    display: block;
+    box-sizing: border-box;    
+    float: left;
+    position: relative;
+    width: auto;
+    margin: 0;
+    padding: 0 40px;
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(41,41,41,.8);
+    border: none;
+    letter-spacing: 0.15em;
+    transition: width .45s ease-in-out;    
+    height: 45px;
+    line-height: 48px;
+}
+  
